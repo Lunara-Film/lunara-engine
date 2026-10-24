@@ -4,6 +4,23 @@ Effective 2026-10-17, by Dalton's explicit instruction. This repository is a
 standalone Streamlit recommendation application, separate from the WordPress
 Theme and plugins. Its current hosting relationship is not established here.
 
+## Dalton's confirmation — effective 2026-10-23
+
+Dalton's confirmation of a website implementation task (for example "yes",
+"go ahead", "do it" or "begin/create it") authorizes the requested work through
+task-branch commits, PRs, passing checks, agent merge, manual deployment and
+live verification. Do not ask for a second deployment confirmation or require
+a new approval naming the final version. Reuse the confirmation in the current
+conversation; instructions to hold, prepare only, leave a draft, or not deploy
+take precedence. Ask only about a real missing decision, access, changed
+destination or work beyond that confirmed scope.
+
+Keep branch protections, required CI and exact-head PR merges. Manual
+deployment means the agent uses the existing host action; it does not mean
+Dalton must click it. Auto-deploy stays off unless he specifically changes it.
+A confirmation never makes a merge evidence of deployment: verify and report
+both states separately.
+
 ## Agent merge authority
 
 Agents have standing permission to commit, push, open/update PRs and merge
@@ -29,10 +46,11 @@ particular PR takes precedence. Follow the shared
 ## Runtime and deployment boundary
 
 Keep CSV data, provider configuration and credentials intact. This policy
-authorizes source-control integration, not changing a live Streamlit host or
-the WordPress site. Confirm actual hosting/deployment triggers before publishing
-runtime changes; production deployment needs a separate explicit instruction.
-This repository is not added to the active WordPress release set.
+follows Dalton's confirmed task scope through release. Establish the actual
+host, deployment trigger and intended destination before publishing runtime
+changes. His confirmation of that release is sufficient; do not demand a
+second approval naming the final version. It does not authorize unrelated
+WordPress changes or add this repository to the active WordPress release set.
 
 When resuming an old branch, read the current default-branch agreement.
 Historical notes do not override current merge authority. Feature/editorial
